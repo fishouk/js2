@@ -8,12 +8,17 @@
 <body>
     <p>Игра для одиноких)</p>
     <p>Вводите слово начинающееся на последнюю букву предыдущего</p>
-    <ul>
+    <ul id="game">
         <li>Арбуз</li>
         <li>Зонт</li>
-        <li id="game">Тромбон</li>
+        <li>Тромбон</li>
     </ul>
-    <button onclick='add()'>Написать слово</button>
-
+    <form action="#">
+        <input type="text" id="g_input" name="g_w_input" size="13" maxlength="20"
+               value="Ваше слово"
+               onFocus="doClear(this)"
+               onBlur="doDefault(this)">        
+    </form>
+        <button onclick='add()'>Написать слово</button>
 </body>
 </html>
