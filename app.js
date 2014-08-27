@@ -1,8 +1,8 @@
 function doClear(theText){
-    if (theText.value == theText.defaultValue) { theText.value = "" } }
+    if (document.game.g_w_input.value == document.game.g_w_input.defaultValue) { document.game.g_w_input.value = "" } }
 
 function doDefault(theText){ 
-    if (theText.value == "") { theText.value = theText.defaultValue } }
+    if (document.game.g_w_input.value == "" ) { document.game.g_w_input.value = document.game.g_w_input.defaultValue } }
 
 function add(){
 	var a = document.getElementById('game');
@@ -11,4 +11,8 @@ function add(){
 	var c = document.createTextNode(d);
 	b.appendChild(c);
 	a.appendChild(b);
+	
 }
+
+function doLast(theText){
+	if (document.game.g_w_input.value !== "Ваше слово") {document.game.g_w_input.value="Ваше слово"} }

@@ -13,12 +13,12 @@
         <li>Зонт</li>
         <li>Тромбон</li>
     </ul>
-    <form action="#">
+    <form action="#" name="game">
         <input type="text" id="g_input" name="g_w_input" size="13" maxlength="20"
                value="Ваше слово"
                onFocus="doClear(this)"
                onBlur="doDefault(this)">        
     </form>
-        <button onclick='add()'>Написать слово</button>
+        <button onclick='add();doLast(this)'>Написать слово</button>
 </body>
 </html>
